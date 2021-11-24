@@ -1,13 +1,20 @@
 <template>
   <div id="app">
-    <img alt="Vue logo" src="./assets/logo.png">
-    <HelloWorld msg="Welcome to Your Vue.js + TypeScript App"/>
+    <div class="container">
+      <div class="row">
+        <div class="col-12">
+          <HelloWorld msg="Welcome to Your Vue.js + TypeScript App (component Paging)"/>
+        </div>
+      </div>
+    </div>
   </div>
 </template>
 
 <script lang="ts">
 import { Component, Vue } from 'vue-property-decorator'
-import HelloWorld from './components/HelloWorld.vue'
+import HelloWorld from './components/hello-world/HelloWorld.vue'
+// Bootstrap
+import '../node_modules/bootstrap/dist/css/bootstrap.min.css'
 
 @Component({
   components: {
